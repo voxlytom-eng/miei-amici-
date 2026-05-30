@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> I Miei Amici</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #32CD32, #228B22);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 30px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.amico {
+    background: rgba(255,255,255,0.2);
+    width: 320px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.amico img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: white;
+    color: #228B22;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1> I Miei Amici</h1>
+
+    <div class="amico">
+        <img src="foto1.jpg" alt="Marco">
+        <h2>carlos</h2>
+        <p></p>
+    </div>
+
+    <div class="amico">
+        <img src="foto2.jpg" alt="Luca">
+        <h2>andrea </h2>
+        <p></p>
+    </div>
+
+    <div class="amico">
+        <img src="foto3.jpg" alt="Sara">
+        <h2>maitrelya</h2>
+        <p>pietro</p>
+    </div>
+
+    <button onclick="salutaAmici()">Saluta gli amici 👋</button>
+</div>
+
+<script>
+function salutaAmici() {
+    alert("Ciao amici! 👋 Benvenuti nel mio sito!");
+}
+</script>
+
+</body>
+</html>
